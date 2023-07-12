@@ -26,7 +26,7 @@ function maxSubarraySum(arr, n) {
 	temp = max;
 	for (let i = n; i < arr.length; i++) {
 		temp = temp - arr[i - n] + arr[i];
-		max = Math.max(max, temp)
+		max = Math.max(max, temp);
 		
 	}
 	return max;
